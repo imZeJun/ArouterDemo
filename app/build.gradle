@@ -1,0 +1,35 @@
+apply plugin: 'com.android.application'
+
+def config = rootProject.ext
+
+android {
+    compileSdkVersion config.android.compileSdkVersion
+    buildToolsVersion config.android.buildToolsVersion
+    defaultConfig {
+        applicationId "com.lizejun.demo.arouterdemo"
+        minSdkVersion config.android.minSdkVersion
+        targetSdkVersion config.android.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile config.dependencies["support-v7"]
+    testCompile config.dependencies["junit"]
+    //在壳中，导入各业务组件即可。
+    if (isNeedMainModule.toBoolean()) {
+        compile project(":module-main")
+    }
+}

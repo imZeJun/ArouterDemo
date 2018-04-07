@@ -1,0 +1,15 @@
+ext {
+    android = [
+            compileSdkVersion : 25,
+            buildToolsVersion : "25.0.2",
+            minSdkVersion : 12,
+            targetSdkVersion : 25
+    ]
+    dependencies = [
+            "support-v4"  : 'com.android.support:support-v4:25.3.1',
+            "support-v7"  : 'com.android.support:appcompat-v7:25.3.1',
+            "junit" : 'junit:junit:4.12',
+            "arouter-api" : 'com.alibaba:arouter-api:1.2.4',
+            "arouter-compiler" : 'com.alibaba:arouter-compiler:1.1.4'
+    ]
+}
