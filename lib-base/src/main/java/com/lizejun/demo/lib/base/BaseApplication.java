@@ -4,6 +4,7 @@ import android.app.Application;
 import android.content.Context;
 
 import com.alibaba.android.arouter.launcher.ARouter;
+import com.lizejun.demo.lib.base.util.Utils;
 
 public class BaseApplication extends Application {
 

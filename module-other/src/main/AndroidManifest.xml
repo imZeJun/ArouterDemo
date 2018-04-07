@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.demo.lizejun.module.other">
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true">
+        <activity android:name="com.lizejun.demo.module.other.NoResultActivity"/>
+        <activity android:name="com.lizejun.demo.module.other.ResultServerActivity"/>
+        <activity android:name="com.lizejun.demo.module.other.EventBusActivity"/>
+        <activity android:name="com.lizejun.demo.module.other.InterMiddleActivity"/>
+        <activity android:name="com.lizejun.demo.module.other.InterTargetActivity"/>
+        <activity android:name="com.lizejun.demo.module.other.InjectActivity"/>
+    </application>
+</manifest>

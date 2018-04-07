@@ -32,4 +32,10 @@ dependencies {
     if (isNeedHomeModule.toBoolean()) {
         compile project(":module-home")
     }
+    if (isNeedOtherModule.toBoolean()) {
+        compile project(":module-other")
+    }
+    if (isNeedStoreModule.toBoolean()) {
+        compile project(":module-store")
+    }
 }
