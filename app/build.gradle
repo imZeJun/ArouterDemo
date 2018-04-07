@@ -29,7 +29,7 @@ dependencies {
     compile config.dependencies["support-v7"]
     testCompile config.dependencies["junit"]
     //在壳中，导入各业务组件即可。
-    if (isNeedMainModule.toBoolean()) {
-        compile project(":module-main")
+    if (isNeedHomeModule.toBoolean()) {
+        compile project(":module-home")
     }
 }
