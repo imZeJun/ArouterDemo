@@ -68,7 +68,7 @@ public class HomeFragment extends Fragment {
                         .withInt(ConstantMap.EVENT_BUS_DATA, 1000)
                         .navigation();
             } else if (id == R.id.bt_intercept) {
-                ARouter.getInstance().build(RouterMap.INTER_TARGET_ACTIVITY, RouterMap.INTERCEPT_GROUP)
+                ARouter.getInstance().build(RouterMap.INTER_TARGET_ACTIVITY)
                         .withBoolean(ConstantMap.IS_LOGIN, StoreModuleRouterService.isLogin())
                         .navigation();
             } else if (id == R.id.bt_inject) {

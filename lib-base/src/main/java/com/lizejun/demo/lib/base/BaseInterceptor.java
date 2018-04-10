@@ -13,7 +13,7 @@ public class BaseInterceptor implements IInterceptor {
 
     @Override
     public void process(Postcard postcard, InterceptorCallback callback) {
-        if (postcard.getGroup().equals(RouterMap.INTERCEPT_GROUP)) {
+        if (postcard.getExtra() == ConstantMap.LOGIN_EXTRA) {
             boolean isLogin = postcard.getExtras().getBoolean(ConstantMap.IS_LOGIN);
             if (!isLogin) {
                 ARouter.getInstance().build(RouterMap.INTER_MIDDLE_ACTIVITY).navigation();

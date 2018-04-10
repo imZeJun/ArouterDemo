@@ -18,4 +18,6 @@ public class ConstantMap {
     public static final String INJECT_AGE = "inject_age";
 
     public static final String INJECT_OBJECT = "inject_object";
+
+    public static final int LOGIN_EXTRA = 1 << 1;
 }
