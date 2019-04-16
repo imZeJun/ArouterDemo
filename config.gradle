@@ -1,16 +1,16 @@
 ext {
     android = [
-            compileSdkVersion : 25,
-            buildToolsVersion : "25.0.2",
-            minSdkVersion : 14,
-            targetSdkVersion : 25
+            compileSdkVersion : 28,
+            buildToolsVersion : "28.0.3",
+            minSdkVersion : 19,
+            targetSdkVersion : 28
     ]
     dependencies = [
-            "support-v4"  : 'com.android.support:support-v4:25.3.1',
-            "support-v7"  : 'com.android.support:appcompat-v7:25.3.1',
+            "support-v4"  : 'com.android.support:support-v4:28.0.0',
+            "support-v7"  : 'com.android.support:appcompat-v7:28.0.0',
             "junit" : 'junit:junit:4.12',
-            "arouter-api" : 'com.alibaba:arouter-api:1.2.4',
-            "arouter-compiler" : 'com.alibaba:arouter-compiler:1.1.4',
+            "arouter-api" : 'com.alibaba:arouter-api:1.4.1',
+            "arouter-compiler" : 'com.alibaba:arouter-compiler:1.2.2',
             "event-bus" : 'org.simple:androideventbus:1.0.5.1',
             "fastjson" : 'com.alibaba:fastjson:1.2.9'
     ]
